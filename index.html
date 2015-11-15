@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>tic tac toe</title>
 
-    <!-- Bootstrap -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,13 +18,32 @@
       <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+</head>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </body>
+<body>
+    <div class="menu">
+        <span class="menu-btn" id="new-game">New game</span>
+        <span class="menu-btn" id="mode">Mode</span>
+    </div>
+
+    <div class="game">
+        <div class="game-cell">O</div>
+        <div class="game-cell">X</div>
+        <div class="game-cell">O</div>
+        <div class="game-cell">X</div>
+        <div class="game-cell">O</div>
+        <div class="game-cell">X</div>
+        <div class="game-cell">O</div>
+        <div class="game-cell">X</div>
+        <div class="game-cell">O</div>
+    </div>
+
+    <div class="score">
+        <span class="score-name">you</span>
+        <span class="score-num" id="score-user">1</span> :
+        <span class="score-num" id="score-cpu">1</span>
+        <span class="score-name">cpu</span>
+    </div>
+</body>
+
 </html>
